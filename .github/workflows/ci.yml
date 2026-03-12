@@ -62,7 +62,7 @@ jobs:
         uses: docker/metadata-action@v5
         with:
           images: |
-            ${{ env.REGISTRY }}/${{ env.IMAGE_NAMESPACE }}/${{ env.IMAGE_REPO }}-${{ matrix.suffix }}
+            ${{ env.REGISTRY }}/${{ env.IMAGE_NAMESPACE }}/${{ matrix.suffix }}
           tags: |
             type=sha,format=short
             type=raw,value=latest,enable={{is_default_branch}}
