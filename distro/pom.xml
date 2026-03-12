@@ -46,7 +46,9 @@
     <calculation.version>2.0.0</calculation.version>
     <htmlwidgets.version>2.0.1</htmlwidgets.version>
     <serialization-xstream.version>0.3.0</serialization-xstream.version>
+    <!-- orders -->
     <ordertemplates.version>2.2.0</ordertemplates.version>
+    <orderexpansion.version>1.0.0</orderexpansion.version>
     <patientflags.version>3.0.10</patientflags.version>
     <o3forms.version>2.3.0</o3forms.version>
     <emrapi.version>3.2.1</emrapi.version>

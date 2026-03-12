@@ -40,6 +40,22 @@
     "defaultFacilityUrl": ""
   },
   "@openmrs/esm-styleguide": {
-    "Brand color #1": "#005d5d"
+    "Brand color #1": "#CD3A90",
+    "Brand color #2": "#CD3A90",
+    "Brand color #3": "#CD3A90"
+  },
+
+  "@openmrs/esm-login-app": {
+    "logo": {
+      "src": "/openmrs/spa/pink.png",
+      "alt": "MedX+ logo"
+    }
+  },
+  "@openmrs/esm-primary-navigation-app": {
+    "logo": {
+      "src": "/openmrs/spa/black.png",
+      "alt": "MedX+ logo",
+      "link": "${openmrsSpaBase}/home"
+    }
   }
 }
