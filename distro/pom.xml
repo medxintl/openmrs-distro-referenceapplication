@@ -58,8 +58,9 @@
     <stockmanagement.version>3.0.0</stockmanagement.version>
     <billing.version>2.2.0-SNAPSHOT</billing.version>
     <!-- Content Packages -->
-    <reference-content.version>1.4.0</reference-content.version>
-    <reference-demo-content.version>1.7.0</reference-demo-content.version>
+    <ugandaemrVersion>5.0.1</ugandaemrVersion>
+    <ugandaemr-content.version>1.0.3</ugandaemr-content.version>
+    <epcare-content.version>1.0.1</epcare-content.version>
   </properties>
 
   <dependencies>
