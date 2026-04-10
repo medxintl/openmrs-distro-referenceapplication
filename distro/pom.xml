@@ -60,7 +60,6 @@
     <!-- Content Packages -->
     <ugandaemrVersion>5.0.1</ugandaemrVersion>
     <ugandaemr-content.version>1.0.3</ugandaemr-content.version>
-    <epcare-content.version>1.0.1</epcare-content.version>
   </properties>
 
   <dependencies>
