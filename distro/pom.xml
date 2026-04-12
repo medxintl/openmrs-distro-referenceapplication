@@ -8,7 +8,7 @@
   </parent>
 
   <artifactId>distro-emr-configuration</artifactId>
-  <name>OpenMRS distro</name>
+  <name>MedX distro</name>
   <packaging>pom</packaging>
 
   <properties>
@@ -21,236 +21,254 @@
     <distro.spaDir>${distro.baseDir}/spa</distro.spaDir>
     <distro.spaConfigDir>${distro.baseDir}/spa_config</distro.spaConfigDir>
 
-    <!-- track module versions
-         we do so here so that we can utilise Maven to track updates, etc. -->
+    <!-- core -->
     <openmrs.version>2.8.4</openmrs.version>
-    <initializer.version>2.11.0</initializer.version>
-    <fhir2.version>3.0.0</fhir2.version>
-    <webservices.rest.version>3.2.0</webservices.rest.version>
-    <addresshierarchy.version>2.21.0</addresshierarchy.version>
-    <patientdocuments.version>1.0.0</patientdocuments.version>
-    <idgen.version>5.0.4</idgen.version>
-    <legacyui.version>2.0.0</legacyui.version>
-    <metadatamapping.version>2.0.0</metadatamapping.version>
-    <openconceptlab.version>3.0.0</openconceptlab.version>
-    <attachments.version>4.0.0</attachments.version>
-    <referencedemodata.version>2.6.1</referencedemodata.version>
-    <queue.version>3.0.0</queue.version>
-    <appointments.version>2.1.0-20250318.070530-1</appointments.version>
-    <teleconsultation.version>2.1.0-20250318.154145-1</teleconsultation.version>
-    <cohort.version>3.7.3</cohort.version>
-    <authentication.version>2.2.0</authentication.version>
-    <reporting.version>2.1.0</reporting.version>
-    <reportingrest.version>2.0.0</reportingrest.version>
-    <!-- the next three are required for reporting -->
-    <calculation.version>2.0.0</calculation.version>
-    <htmlwidgets.version>2.0.1</htmlwidgets.version>
-    <serialization-xstream.version>0.3.0</serialization-xstream.version>
-    <!-- orders -->
-    <ordertemplates.version>2.2.0</ordertemplates.version>
-    <orderexpansion.version>1.0.0</orderexpansion.version>
-    <patientflags.version>3.0.10</patientflags.version>
-    <o3forms.version>2.3.0</o3forms.version>
-    <emrapi.version>3.2.1</emrapi.version>
-    <event.version>4.0.0</event.version>
-    <bedmanagement.version>7.2.0</bedmanagement.version>
-    <!-- other dependencies -->
+
+    <!-- module versions -->
+    <addresshierarchyVersion>2.21.0</addresshierarchyVersion>
+    <attachmentsVersion>3.7.0</attachmentsVersion>
+    <bahmniappointmentVersion>2.0.2</bahmniappointmentVersion>
+    <bedmanagementVersion>6.1.0</bedmanagementVersion>
+    <billingVersion>1.3.2</billingVersion>
+    <calculationVersion>1.3.0</calculationVersion>
+    <cohortModuleVersion>3.7.3</cohortModuleVersion>
+    <databaseBackupVersion>1.3.0</databaseBackupVersion>
+    <dataEntryStatisticsVersion>1.8.0</dataEntryStatisticsVersion>
+    <dataexchangeVersion>1.3.8</dataexchangeVersion>
+    <emrapiVersion>2.3.0</emrapiVersion>
+    <eventVersion>2.10.0</eventVersion>
+    <fhir2Version>2.5.0</fhir2Version>
+    <formfilterVersion>1.3.0</formfilterVersion>
+    <htmlwidgetsVersion>1.11.0</htmlwidgetsVersion>
+    <idgenVersion>4.14.0</idgenVersion>
+    <initializerVersion>2.9.0</initializerVersion>
+    <junitParamsVersion>1.0.4</junitParamsVersion>
+    <labmanagementVersion>1.0.3</labmanagementVersion>
+    <legacyuiVersion>1.23.0</legacyuiVersion>
+    <metadatadeployVersion>1.13.0</metadatadeployVersion>
+    <metadatamappingVersion>1.6.0</metadatamappingVersion>
+    <metadatasharingVersion>1.10.0</metadatasharingVersion>
+    <o3formsVersion>2.3.0</o3formsVersion>
+    <openconceptlabModuleVersion>2.4.0</openconceptlabModuleVersion>
+    <openmrsAtomfeedVersion>2.6.1</openmrsAtomfeedVersion>
+    <openmrsTestutilsVersion>1.3</openmrsTestutilsVersion>
+    <orderexpansionVersion>1.0.0</orderexpansionVersion>
+    <orderTemplatesVersion>1.0.3</orderTemplatesVersion>
+    <patientFlagsVersion>3.0.8</patientFlagsVersion>
     <patientqueueingVersion>2.0.1</patientqueueingVersion>
     <referencemetadataVersion>2.12.0</referencemetadataVersion>
     <reportingCompatibilityVersion>2.0.9</reportingCompatibilityVersion>
-    <dataexchangeVersion>1.3.8</dataexchangeVersion>
-    <metadatasharingVersion>1.10.0</metadatasharingVersion>
-    <metadatadeployVersion>1.13.0</metadatadeployVersion>
-    <metadatamappingVersion>1.6.0</metadatamappingVersion>
-
-    <!-- Stock Management and Billing -->
-    <stockmanagement.version>3.0.0</stockmanagement.version>
-    <billing.version>2.2.0-SNAPSHOT</billing.version>
-    <!-- Content Packages -->
-    <ugandaemrVersion>5.0.2-SNAPSHOT</ugandaemrVersion>
+    <reportingRestVersion>1.15.0</reportingRestVersion>
+    <reportingVersion>1.27.0</reportingVersion>
+    <serializationxstreamVersion>0.2.16</serializationxstreamVersion>
+    <spaModuleVersion>2.0.0</spaModuleVersion>
+    <stockmanagementVersion>2.0.3</stockmanagementVersion>
+    <teleconsultationVersion>2.0.0</teleconsultationVersion>
+    <ugandaemrReportsVersion>2.1.6</ugandaemrReportsVersion>
+    <ugandaemrSyncVersion>2.0.5</ugandaemrSyncVersion>
+    <ugandaemrVersion>5.0.1</ugandaemrVersion>
+    <webservices.restModuleVersion>2.49.0</webservices.restModuleVersion>
     <ugandaemr-content.version>1.0.3</ugandaemr-content.version>
     <epcare-content.version>1.0.1</epcare-content.version>
-
-
   </properties>
 
   <dependencies>
+
     <dependency>
-      <groupId>org.openmrs.web</groupId>
-      <artifactId>openmrs-webapp</artifactId>
-      <version>${openmrs.version}</version>
-      <type>war</type>
+      <groupId>javax.servlet</groupId>
+      <artifactId>javax.servlet-api</artifactId>
+      <version>3.1.0</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- Begin OpenMRS core -->
+
+    <dependency>
+      <groupId>org.openmrs.api</groupId>
+      <artifactId>openmrs-api</artifactId>
+      <version>${openMRSVersion}</version>
+      <type>jar</type>
       <scope>provided</scope>
     </dependency>
 
-    <!-- Module dependencies -->
+
+    <dependency>
+      <groupId>org.openmrs.web</groupId>
+      <artifactId>openmrs-web</artifactId>
+      <version>${openMRSVersion}</version>
+      <type>test-jar</type>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.openmrs.test</groupId>
+      <artifactId>openmrs-test</artifactId>
+      <version>${openMRSVersion}</version>
+      <type>pom</type>
+      <scope>test</scope>
+    </dependency>
+
+
+
+    <!-- End OpenMRS core -->
+
+    <!-- custom module -->
     <dependency>
       <groupId>org.openmrs.module</groupId>
-      <artifactId>initializer-omod</artifactId>
-      <version>${initializer.version}</version>
+      <artifactId>addresshierarchy-api</artifactId>
+      <version>${addresshierarchyVersion}</version>
       <scope>provided</scope>
     </dependency>
+
+
     <dependency>
       <groupId>org.openmrs.module</groupId>
-      <artifactId>authentication-omod</artifactId>
-      <version>${authentication.version}</version>
+      <artifactId>calculation-api</artifactId>
+      <version>${calculationVersion}</version>
       <scope>provided</scope>
     </dependency>
+
     <dependency>
       <groupId>org.openmrs.module</groupId>
-      <artifactId>fhir2-omod</artifactId>
-      <version>${fhir2.version}</version>
+      <artifactId>dataexchange-api</artifactId>
+      <version>${dataexchangeVersion}</version>
       <scope>provided</scope>
     </dependency>
+
     <dependency>
       <groupId>org.openmrs.module</groupId>
-      <artifactId>webservices.rest-omod</artifactId>
-      <version>${webservices.rest.version}</version>
-      <scope>provided</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.openmrs.module</groupId>
-      <artifactId>idgen-omod</artifactId>
-      <version>${idgen.version}</version>
-      <scope>provided</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.openmrs.module</groupId>
-      <artifactId>legacyui-omod</artifactId>
-      <version>${legacyui.version}</version>
-      <scope>provided</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.openmrs.module</groupId>
-      <artifactId>addresshierarchy-omod</artifactId>
-      <version>${addresshierarchy.version}</version>
-      <scope>provided</scope>
-    </dependency>
-      <dependency>
-      <groupId>org.openmrs.module</groupId>
-      <artifactId>patientdocuments-omod</artifactId>
-      <version>${patientdocuments.version}</version>
-      <scope>provided</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.openmrs.module</groupId>
-      <artifactId>metadatamapping-omod</artifactId>
-      <version>${metadatamapping.version}</version>
-      <scope>provided</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.openmrs.module</groupId>
-      <artifactId>openconceptlab-omod</artifactId>
-      <version>${openconceptlab.version}</version>
-      <scope>provided</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.openmrs.module</groupId>
-      <artifactId>attachments-omod</artifactId>
-      <version>${attachments.version}</version>
-      <scope>provided</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.openmrs.module</groupId>
-      <artifactId>referencedemodata-omod</artifactId>
-      <version>${referencedemodata.version}</version>
-      <scope>provided</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.openmrs.module</groupId>
-      <artifactId>queue-omod</artifactId>
-      <version>${queue.version}</version>
-      <scope>provided</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.bahmni.module</groupId>
-      <artifactId>appointments-omod</artifactId>
-      <version>${appointments.version}</version>
-      <scope>provided</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.bahmni.module</groupId>
-      <artifactId>teleconsultation-omod</artifactId>
-      <version>${teleconsultation.version}</version>
-      <scope>provided</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.openmrs.module</groupId>
-      <artifactId>cohort-omod</artifactId>
-      <version>${cohort.version}</version>
-      <scope>provided</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.openmrs.module</groupId>
-      <artifactId>reporting-omod</artifactId>
-      <version>${reporting.version}</version>
-      <scope>provided</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.openmrs.module</groupId>
-      <artifactId>reportingrest-omod</artifactId>
-      <version>${reportingrest.version}</version>
-      <scope>provided</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.openmrs.module</groupId>
-      <artifactId>calculation-omod</artifactId>
-      <version>${calculation.version}</version>
-      <scope>provided</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.openmrs.module</groupId>
-      <artifactId>htmlwidgets-omod</artifactId>
-      <version>${htmlwidgets.version}</version>
-      <scope>provided</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.openmrs.module</groupId>
-      <artifactId>serialization.xstream-api</artifactId>
-      <version>${serialization-xstream.version}</version>
-      <scope>provided</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.openmrs.module</groupId>
-      <artifactId>patientflags-omod</artifactId>
-      <version>${patientflags.version}</version>
-      <scope>provided</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.openmrs.module</groupId>
-      <artifactId>o3forms-omod</artifactId>
-      <version>${o3forms.version}</version>
-      <scope>provided</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.openmrs.module</groupId>
-      <artifactId>emrapi-omod</artifactId>
-      <version>${emrapi.version}</version>
+      <artifactId>emrapi-api</artifactId>
+      <version>${emrapiVersion}</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.openmrs</groupId>
-      <artifactId>event-omod</artifactId>
-      <version>${event.version}</version>
+      <artifactId>event-api</artifactId>
+      <version>${eventVersion}</version>
+      <scope>test</scope>
+    </dependency>
+
+
+    <dependency>
+      <groupId>org.openmrs.module</groupId>
+      <artifactId>idgen-api</artifactId>
+      <version>${idgenVersion}</version>
       <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.openmrs.module</groupId>
+      <artifactId>legacyui-omod</artifactId>
+      <version>${legacyuiVersion}</version>
+      <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.openmrs.module</groupId>
+      <artifactId>patientqueueing-api</artifactId>
+      <version>${patientqueueingVersion}</version>
+      <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.openmrs.module</groupId>
+      <artifactId>metadatadeploy-api</artifactId>
+      <version>${metadatadeployVersion}</version>
+      <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.openmrs.module</groupId>
+      <artifactId>metadatamapping-api</artifactId>
+      <version>${metadatamappingVersion}</version>
+      <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.openmrs.module</groupId>
+      <artifactId>metadatasharing-api</artifactId>
+      <version>${metadatasharingVersion}</version>
+      <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.openmrs.module</groupId>
+      <artifactId>patientflags-api</artifactId>
+      <version>${patientFlagsVersion}</version>
+      <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.openmrs.module</groupId>
+      <artifactId>patientflags-api-metadata</artifactId>
+      <version>${patientFlagsVersion}</version>
+      <scope>provided</scope>
+    </dependency>
+
+
+    <dependency>
+      <groupId>org.openmrs.module</groupId>
+      <artifactId>reporting-api</artifactId>
+      <version>${reportingVersion}</version>
+      <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.openmrs.module</groupId>
-      <artifactId>bedmanagement-omod</artifactId>
-      <version>${bedmanagement.version}</version>
-      <scope>provided</scope>
+      <artifactId>reportingcompatibility-api</artifactId>
+      <version>${reportingCompatibilityVersion}</version>
+      <scope>test</scope>
     </dependency>
+
     <dependency>
       <groupId>org.openmrs.module</groupId>
-      <artifactId>stockmanagement-omod</artifactId>
-      <version>${stockmanagement.version}</version>
-      <scope>provided</scope>
+      <artifactId>reporting-api-1.9</artifactId>
+      <version>${reportingVersion}</version>
+      <scope>test</scope>
     </dependency>
+
+
     <dependency>
       <groupId>org.openmrs.module</groupId>
-      <artifactId>billing-omod</artifactId>
-      <version>${billing.version}</version>
+      <artifactId>serialization.xstream-api</artifactId>
+      <version>${serializationxstreamVersion}</version>
       <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.openmrs.module</groupId>
+      <artifactId>serialization.xstream-api-2.0</artifactId>
+      <version>${serializationxstreamVersion}</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.openmrs.contrib</groupId>
+      <artifactId>testutils</artifactId>
+      <version>${openmrsTestutilsVersion}</version>
+      <scope>test</scope>
+    </dependency>
+
+
+    <dependency>
+      <groupId>pl.pragmatists</groupId>
+      <artifactId>JUnitParams</artifactId>
+      <version>${junitParamsVersion}</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.openmrs.module</groupId>
+      <artifactId>webservices.rest-omod-common</artifactId>
+      <version>${webservices.restModuleVersion}</version>
+      <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.openmrs.module</groupId>
+      <artifactId>webservices.rest-omod-common</artifactId>
+      <version>${webservices.restModuleVersion}</version>
+      <scope>provided</scope>
+      <type>test-jar</type>
     </dependency>
   </dependencies>
 
