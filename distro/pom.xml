@@ -22,7 +22,7 @@
     <distro.spaConfigDir>${distro.baseDir}/spa_config</distro.spaConfigDir>
 
     <!-- core -->
-    <openmrs.version>2.8.4</openmrs.version>
+    <openmrs.version>2.7.4</openmrs.version>
 
     <!-- module versions -->
     <addresshierarchyVersion>2.21.0</addresshierarchyVersion>
